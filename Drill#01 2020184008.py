@@ -21,11 +21,14 @@ def draw_d():
     turtle.stamp()
     turtle.setheading(0)
     turtle.forward(50)
-
+def restart():
+    turtle.reset()
+    
 turtle.onkey(draw_w,'w')
 turtle.onkey(draw_s,'s')
 turtle.onkey(draw_a,'a')
 turtle.onkey(draw_d,'d')
+turtle.onkey(restart, 'Escape')
 
 turtle.shape("turtle")
 turtle.listen()
